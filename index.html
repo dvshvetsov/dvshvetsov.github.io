@@ -76,6 +76,35 @@
       color: #888;
       border-top: 1px solid #eee;
     }
+
+
+       .menu-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-title {
+      font-weight: bold;
+      margin-bottom: 0.3em;
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+      color: inherit;
+    }
+
+    .youtube-logo svg {
+      display: block;
+    }
+
+    .submenu {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .submenu li {
+      margin-bottom: 0.3em;
+    }
   </style>
 </head>
  
@@ -89,19 +118,27 @@
 <body>
 
       <header>
-    <div class="container nav-wrapper">
+    <nav id="nav">
+    <a href="materials.html">Материалы</a>
+    <a href="talks.html">Выступления</a>
 
-      <nav id="nav">
-        
-        
-        <a href="materials.html">Материалы</a>
-        <a href ="talks.html">Выступления</a>
-        <a href="interviews.html">Беседы</a>
-        <a href="mitya_dima.html">Митя & Дима</a>
-          <a href= "found.html"> Найдено в сети</a>
-        <a href="about.html">Обо мне</a>
-      </nav>
+    <div class="menu-block">
+      <div class="menu-title youtube-logo" aria-label="YouTube">
+        <!-- SVG логотип YouTube -->
+        <svg width="80" height="24" viewBox="0 0 97 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <path fill="#FF0000" d="M9.6 0C4.29 0 0 4.29 0 9.6v4.8c0 5.31 4.29 9.6 9.6 9.6h7.68c5.31 0 9.6-4.29 9.6-9.6v-4.8c0-5.31-4.29-9.6-9.6-9.6H9.6z"/>
+          <path fill="#fff" d="M13.44 16.8V7.2l7.2 4.8-7.2 4.8z"/>
+        </svg>
+      </div>
+      <ul class="submenu">
+        <li><a href="interviews.html">Беседы</a></li>
+        <li><a href="mitya_dima.html">Митя & Дима</a></li>
+      </ul>
     </div>
+
+    <a href="found.html">Найдено в сети</a>
+    <a href="about.html">Обо мне</a>
+  </nav>
   </header>
 
 <main>
