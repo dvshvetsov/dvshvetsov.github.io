@@ -149,6 +149,15 @@
 
 <p> На досуге мы пробуем писать небольшую <a href="https://geometry.ru/incircle_book.html">книжку по геометрии</a> </p>
 </main> 
+
+	 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a[href^='http']").forEach(link => {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      });
+    });
+  </script>
 </body>
 </div>
 </html>
